@@ -31,5 +31,17 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 10
 
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = '{slug}/index.html'
+
+THEME = './themes/attila'
+
+
+# attila
+HEADER_COVER = 'static/my_image.png'
+
+CATEGORY_URL = 'category/{slug}/'
+CATEGORY_SAVE_AS = 'category/{slug}/index.html'
+
+CATEGORIES_URL = 'categories/'
+CATEGORIES_SAVE_AS = 'categories/index.html'

@@ -8,9 +8,10 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-GITHUB_PAGES_BRANCH=main
-GITHUB_PAGES_COMMIT_MESSAGE=Generate Pelican site
+CURRENT_TIME := $(shell date "+%Y-%m-%d %H:%M:%S")
+GITHUB_PAGES_COMMIT_MESSAGE = Regenerate Pelican static site ($(CURRENT_TIME))
 
+GITHUB_PAGES_BRANCH = gh-pages
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)

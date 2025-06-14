@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://iamb0ttle.github.io/sitemap.xml

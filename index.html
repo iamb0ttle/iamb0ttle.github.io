@@ -1,29 +1,35 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-      <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <meta charset="utf-8"/>
+  <meta charset="utf-8" content="text/html" http-equiv="Content-Type">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
 
 
   <title>Byeonghyeon Na Blog</title>
 
 
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="referrer" content="origin" />
-  <meta name="generator" content="Pelican" />
-  <link href="/" rel="canonical" />
+  <meta content="True" name="HandheldFriendly"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="Pelican" name="generator"/>
+  <link href="/" rel="canonical"/>
 
   <!-- Feed -->
+  <link href="/feeds/all.atom.xml" rel="alternate" title="Byeonghyeon Na Blog Full Atom Feed" type="application/atom+xml"/>
 
-  <link rel="stylesheet" type="text/css" href="/theme/css/style.css">
+  <link href="/theme/css/style.css" rel="stylesheet" type="text/css"/>
 
+  <!-- CSS specified by the user -->
+
+
+  <link href="/assets/css/custom_styles.css" rel="stylesheet" type="text/css">
 
   <!-- Custom fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,300" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"/>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -58,13 +64,15 @@
 
 
 <!-- Open Graph -->
-<meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Byeonghyeon Na Blog"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:type" content="blog"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Byeonghyeon Na Blog"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:description" content="View the blog."/>
-<meta prefix="og: http://ogp.me/ns#" property="og:locale" content="en_US"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:image" content="/static/my_image.png">
+<meta content="Byeonghyeon Na Blog" prefix="og: http://ogp.me/ns#" property="og:site_name"/>
+<meta content="blog" prefix="og: http://ogp.me/ns#" property="og:type"/>
+<meta content="Byeonghyeon Na Blog" prefix="og: http://ogp.me/ns#" property="og:title"/>
+<meta content="Hello 👋 Welcome to Byeonghyeon Na's blog!&lt;br&gt;
+I'm a software engineer passionate about &lt;br&gt;
+learning and building, sharing my insights and tech explorations here." prefix="og: http://ogp.me/ns#" property="og:description"/>
+<meta content="en_US" prefix="og: http://ogp.me/ns#" property="og:locale"/>
+<meta content="/" prefix="og: http://ogp.me/ns#" property="og:url"/>
+<meta content="/assets/images/home-bg.jpg" prefix="og: http://ogp.me/ns#" property="og:image"/>
 
 <!-- Twitter Card -->
 
@@ -74,11 +82,13 @@
   "@type" : "Website",
   "name": " Byeonghyeon Na Blog ",
   "url" : "/",
-  "image": "/static/my_image.png",
-  "description": "View the blog."
+  "image": "/theme/images/home-bg.jpg",
+  "description": "Hello 👋 Welcome to Byeonghyeon Na's blog!<br>
+I'm a software engineer passionate about <br>
+learning and building, sharing my insights and tech explorations here."
 }
 </script>
-</head>
+</link></meta></head>
 
 
 
@@ -91,15 +101,26 @@
 <body class="home-template">
 
 <div class="nav-header">
-  <nav class="nav-wrapper" aria-label="Main">
+  <nav aria-label="Main" class="nav-wrapper">
 <ul>
 
+    <li class="nav-Home active" role="presentation"><a href="/"><span>Home</span></a></li>
+    <li class="nav-Tag" role="presentation"><a href="/tag"><span>Tag</span></a></li>
+    <li class="nav-Author" role="presentation"><a href="/author/byeonghyeon-na"><span>Author</span></a></li>
+    <li class="nav-Category" role="presentation"><a href="/categories"><span>Category</span></a></li>
+    <li class="nav-Archives" role="presentation"><a href="/archive"><span>Archives</span></a></li>
 
 </ul>
 <ul class="nav-meta">
+    <li class="nav-linkedin"><a aria-label="Linkedin" href="https://www.linkedin.com/in/byeonghyeon-na" target="_blank"><i aria-hidden="true" class="icon icon-linkedin"></i>
+    <span>LinkedIn</span>
+    </a></li>
+    <li class="nav-github"><a aria-label="Github" href="https://github.com/iamb0ttle" target="_blank"><i aria-hidden="true" class="icon icon-github"></i>
+    <span>Github</span>
+    </a></li>
   <li class="nav-search" style="display: none;">
     <a title="Search">
-      <i class="icon icon-search" aria-hidden="true"></i>
+      <i aria-hidden="true" class="icon icon-search"></i>
       <span>Search</span>
     </a>
   </li>
@@ -107,32 +128,35 @@
 
   <div class="nav-wrapper-control">
     <div class="inner">
-      <a class="nav-menu" role="button"><i class="icon icon-menu" aria-hidden="true"></i>Menu</a>
-      <a class="nav-search" title="Search" role="button" style="display: none;"><i class="icon icon-search" aria-hidden="true"></i></a>
+      <a class="nav-menu" role="button"><i aria-hidden="true" class="icon icon-menu"></i>Menu</a>
+      <a class="nav-search" role="button" style="display: none;" title="Search"><i aria-hidden="true" class="icon icon-search"></i></a>
     </div>
   </div>
 </div>
-<div class="nav-close" role="button" aria-label="Close"></div>
-  <section id="wrapper" class="page-wrapper">
+<div aria-label="Close" class="nav-close" role="button"></div>
+  <section class="page-wrapper" id="wrapper">
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="blog-header  has-cover ">
+    <header class="blog-header has-cover">
       <div class="inner">
         <div class="box blog-box">
           <h1 class="blog-name">Byeonghyeon Na Blog</h1>
+          <span class="blog-description">Hello 👋 Welcome to Byeonghyeon Na's blog!<br/>
+I'm a software engineer passionate about <br/>
+learning and building, sharing my insights and tech explorations here.</span>
         </div>
 
           <div class="blog-cover cover">
-              <img src="/static/my_image.png" alt="Byeonghyeon Na Blog" />
+              <img alt="Byeonghyeon Na Blog" class="image-process-large-photo" sizes="(min-width: 1920px) 2000px, (min-width: 1400px) 1600px, (min-width: 1000px) 1200px, (min-width: 768px) 900px, 100vw" src="/assets/images/derivatives/large-photo/1600w/home-bg.jpg" srcset="/assets/images/derivatives/large-photo/800w/home-bg.jpg 800w, /assets/images/derivatives/large-photo/1600w/home-bg.jpg 1600w, /assets/images/derivatives/large-photo/2400w/home-bg.jpg 2400w, /assets/images/derivatives/large-photo/3200w/home-bg.jpg 3200w"/>
           </div>
       </div>
     </header>
 
 
-<div id="index" class="container">
+<div class="container" id="index">
   <main class="content" role="main">
     <div class="extra-pagination">
-<nav class="pagination" aria-label="Pagination" role="pagination">
+<nav aria-label="Pagination" class="pagination" role="pagination">
   <div class="inner">
     <div class="box pagination-box">
       <span class="pagination-info">Page 1 of 1</span>
@@ -142,31 +166,7 @@
     </div>
 
 
-
-    <article class="post">
-        <div class="inner">
-            <div class="box post-box">
-                <h2 class="post-title"><a href="/my-first-review.html" rel="bookmark" title="Permalink to My First Review">My First Review</a>
-                </h2>
-                <span class="post-meta">
-                    By 
-                        <a class="post-meta-tag" href="/author/nbhyun0329gmailcom.html">Nbhyun0329@gmail.com</a>
-                     in 
-                    <a class="post-meta-tag" href="/category/review/">Review</a>
-                      on <time datetime="Fri 03 December 2010">Fri 03 December 2010</time>
-                </span>
-                <p class="post-excerpt">
-                        Following is a review of my favorite mechanical keyboard.Following is a review of my favorite mechanical keyboard.Following is a review of my favorite mechanical keyboard.Following is a review of my favorite mechanical keyboard.Following is a...
-                </p>
-
-                <div class="post-excerpt">
-
-                </div>
-            </div>
-        </div>
-    </article>
-
-<nav class="pagination" aria-label="Pagination" role="pagination">
+<nav aria-label="Pagination" class="pagination" role="pagination">
   <div class="inner">
     <div class="box pagination-box">
       <span class="pagination-info">Page 1 of 1</span>
@@ -176,15 +176,15 @@
   </main>
 </div>
     <div class="nav-footer">
-      <nav class="nav-wrapper" aria-label="Footer">
-        <span class="nav-copy">Byeonghyeon Na Blog &copy; 2023
+      <nav aria-label="Footer" class="nav-wrapper">
+        <span class="nav-copy">Byeonghyeon Na Blog © 2025
         </span>
         <span class="nav-credits">
 
 
 
-          Published with <a href="https://github.com/getpelican/pelican" rel="nofollow">Pelican</a> &bull; Theme <a href="https://github.com/arulrajnet/attila" rel="nofollow">Attila</a> &bull;
-          <a class="menu-item js-theme" href="#" data-system="System theme" data-dark="Dark theme" data-light="Light theme">
+          Published with <a href="https://github.com/getpelican/pelican" rel="nofollow">Pelican</a> • Theme <a href="https://github.com/arulrajnet/attila" rel="nofollow">Attila</a> •
+          <a class="menu-item js-theme" data-dark="Dark theme" data-light="Light theme" data-system="System theme" href="#">
             <span class="theme-icon"></span><span class="theme-text">System theme</span>
           </a>
         </span>
@@ -195,9 +195,26 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
-  <script type="text/javascript" src="/theme/js/jquery.fitvids.js"></script>
-  <script type="text/javascript" src="/theme/js/script.js"></script>
+  <script src="/theme/js/jquery.fitvids.js" type="text/javascript"></script>
+  <script src="/theme/js/script.js" type="text/javascript"></script>
 
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-H4PC9Q2STK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-H4PC9Q2STK', { 'anonymize_ip': true });
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'iamb0ttlegithubio';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
 
   <!-- 	The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in article.html, but it needs to be included down here, after jQuery has already loaded. -->
 </body>
